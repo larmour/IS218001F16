@@ -9,7 +9,7 @@
    echo '2. string chr (int $ascii)';
    $str = chr(43);
    $str1 = chr(61);
-   echo("5 $str 5 $str1 10");
+   echo "5 $str 5 $str1 10";
 
 
   
@@ -29,8 +29,6 @@
      }
 
 
-
-   // 
    echo '5. string echo';
    echo "This homework assignment";
 
@@ -50,7 +48,7 @@
 
 
   //htmlspecialchars_decode function converts some predefined HTML entities to characters
-  echo '8. string htmlspecialcars_decode()';
+  echo '8. string htmlspecialchars_decode()';
   $str = 'I do not like &quot;PHP&quot;.';
   echo htmlspecialchars_decode($str, ENT_QUOTES); 
  
@@ -78,39 +76,33 @@
  //str_getcsv function parses a string for fields in CSV format and returns an array
  // containing the fields read
  echo '12. string str_getcsv';
- $str_CSV = '"Apple","RED","#D62433"
- "Orange","ORANDE","#FEB635"
- "Banana","YELLOW","#FEE492"
- "Grapes","VIOLET","#B370AD"
- "KIWI","GREEN","#9BA207"
- "Dates","BROWN","#922E2F"';
+ $str_CSV = '"Apple","RED","#D62433", "Orange","ORANDE","#FEB635", "Banana","YELLOW","#FEE492, "Grapes","VIOLET","#B370AD", "KIWI","GREEN","#9BA207", "Dates","BROWN","#922E2F"';
 
  $row = str_getcsv($str_CSV, "\n");
  $length = count($row);
  for($i=0;$i<$length;$i++) {
   $data = str_getcsv($row[$i], ",");
    print_r($data);
-
+   }
 
 
  //strip_tags function strips a string from HTML, XML, and PHP tags
  echo '13. string strip_tags';
- $text = '<p> This is a paragraph text.</p><!-- Comment --><a href="fragment">Other text
- provided</a>';
+ $text = '<p> This is a paragraph text.</p><!-- Comment --><a href="fragment">Other text provided</a>';
  echo strip_tags($text);
 
 
  //strpos function finds the position of the first occurrence of a string inside another
  // string(not case-sensitive)
  echo '14. string strpos';
- $numberedString= "0,1,2,3,4,5,6,7,8,9";
+ $numberedString= "0123456789";
  $fivePos = strpos($numberedString,"5");
- echo "The position of 5 in the string is $fivePos";
-
+ echo "The position of 5 in the string is $fivePos ";
 
 
  //strleng function returns the length of the given string
  echo '15. string strlen';
- $str =' abcd efg hijk ';
+ $str = ' abcd efg hijk ';
  echo strlen($str);
+
 ?>
