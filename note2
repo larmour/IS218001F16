@@ -1,4 +1,37 @@
 open ended questions(explain what these are)
-dont repeat yourself
-abstraction
-seperate of concerns 
+
+dont repeat yourself: can produce much cleaner code than one who continuously infects the application with unnecessary repetition. 
+                      Aims to reduce duplication of information in a program using code generators and data transformtion to prevent duplication
+                      of codes. 
+
+abstraction: programmer hides all data except for relevant important stuff about an object to reduce the complexity of the code and help
+             the effiency of the code as well. Basically abstraction goes from complex machinery to more simplified and human like.
+
+seperate concerns: It seperates a computer program into destinct sections and each section address a seperate concern. A concern is information
+                      that impacts the code of the computer program which is sometimes the name of a class to instantiate.
+                      The purpose of this principle is to simplify development and the maintenance of computer programs. Also you can can recycle
+                      certain sections and make changes to another section without having to make changes to all sections. 
+                      An example of how seperation of concerns is used is the use of complementary languages. Such as HTML  which is 
+                      mainly used for webpage content, CSS is used organizing the structure and presentation of content style. Prior to CSS
+                      html performed both responsibilities but this principle seperates the resposonsibility into different concerns. 
+                   
+CREATIONAL PATTERNS
+*singleton- restricts the instantiation of a class to one object/restrict instantiation to a certain number of objects. 
+           special class that generates one &only one object instance
+*factory- deals with prob of creating objects w/o having to specify the exact class of the object that will be created
+          relies on inheritance. building an inheritance hierachy of creator classes
+*abstract factory- provides a way to enclose a group of individual factories that  have a common theme without specifying their concrete
+                  classes. grouping the creation of functionally related products
+*prototype- used when the type of objects to create is determined by a prototypical instance, which is cloned to produce new objects.
+            using clone to generate objects. purpose is to avoide subclasses of an object creator
+
+STRUCTURAL PATTERNS
+*composite- describes that a group of objects is to be treated in same way as a single instance of an object. purpose is to "compose" objects
+            into tree structures part-whole hierachies. composing structure in which groups of objects can be used as if they were individual objects
+*decorator- allows behavior to be added to a i a flexible mechanism for combining objects at runtime to extend functionality
+*facade- creating a simple interface to complex or variable systems
+*adapter-A class extends another class, takes in an object, and makes the taken object behave like the extended class.
+*bridge-An abstraction and implementation are in different class hierarchies.
+*flyweight-The reusable and variable parts of a class are broken into two classes to save resources.
+*proxy- One class controls the creation of and access to objects in another class.
+
