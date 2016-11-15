@@ -3,7 +3,6 @@ http://www.w3schools.com/sql/sql_orderby.asp
 mysql -u kwilliam -p -h sql2.njit.edu (-u username, -p password -h host)
 enter password: ____
 
-host is the server you are logging into
 show databases; 
 use ___username____; -> picks a database
 show tables; -> shows tables
