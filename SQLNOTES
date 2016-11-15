@@ -1,0 +1,19 @@
+http://www.w3schools.com/sql/sql_orderby.asp
+
+mysql -u kwilliam -p -h sql2.njit.edu (-u username, -p password -h host)
+enter password: ____
+
+show databases; 
+use ___username____; -> picks a database
+show tables; -> shows tables
+describe customers; -> describes the name of the fields in specific table 
+SELECT customerNumber, customerName FROM customers LIMIT 5; -> limit returns only 5 records even if there is more
+ORDER BY ASC-> puts order by ascending
+ORDER BY DESC-> puts order by descending
+SELECT -> selects name of the fields, used to select data from a database.
+DESTINCT ->shows unique values, can be used to return only distinct (different) values
+WHERE clause -> used to extract only those records that fulfill a specified criterion.
+
+INNER JOIN -> INNER JOIN keyword selects all rows from both tables as long as there is a match between the columns in both tables
+             SELECT orders.orderNumber, customers.customerName, orders.orderDate FROM orders INNER JOIN customers ON orders.customerNumber=customers.customerNumber; 
+* -> Wildcard, meaning all fields in table
