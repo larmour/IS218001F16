@@ -11,7 +11,7 @@ class dbConn{
    
    try {
    // assign PDO object to db variable
-   self::$db = new PDO( 'mysql:host=sql1.njit.edu;dbname=ls95', 'la95', '1uPHeSMbW' );
+   self::$db = new PDO( 'mysql:host=sql1.njit.edu;dbname=la95', 'la95', '1uPHeSMbW' );
    self::$db->setAttribute( PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION );
    }
    catch (PDOException $e) {
